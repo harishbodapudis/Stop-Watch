@@ -1,0 +1,108 @@
+/* Write CSS here */
+
+.main-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+  background-size: 890px;
+  background-position-y: top;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.stop-time-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+}
+.heading {
+  font-weight: 600;
+  font-size: 40px;
+}
+.timer-img-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  box-shadow: 0px 0px 4px 1px 0px #bfbfbf;
+  height: 90%;
+  padding: 10px;
+}
+.timer-time-img-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.timer {
+  font-weight: bold;
+}
+.stopwatch-img {
+  height: 20px;
+  margin-right: 15px;
+}
+.start-stop-reset {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.current-time {
+  color: #333333;
+  font-size: 40px;
+}
+.start {
+  background-color: #1db05f;
+  border-width: 0px;
+  color: #ffffff;
+  padding: 5px;
+  width: 30%;
+  font-size: 12px;
+  cursor: pointer;
+}
+.stop {
+  background-color: #ef0d36;
+  border-width: 0px;
+  color: #ffffff;
+  padding: 5px;
+  width: 30%;
+  font-size: 12px;
+  cursor: pointer;
+}
+.reset {
+  background-color: #eaa800;
+  border-width: 0px;
+  color: #ffffff;
+  padding: 5px;
+  width: 30%;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+@media (width < 768px) {
+  .main-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-sm-bg.png');
+    background-size: 380px;
+    height: 100vh;
+    background-position: right;
+  }
+  .heading {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .current-time {
+    font-size: 40px;
+  }
+  .timer-img-box {
+    width: 80%;
+  }
+  .stop-time-container {
+    width: 45%;
+  }
+}
